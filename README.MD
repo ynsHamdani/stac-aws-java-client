@@ -46,7 +46,7 @@ int maxPages2 = 5; // Max pages of results to fetch
 
 ```
 
-### ✅ Use Case 2: FETCH COLLECTIONS, ITEMS, AND ASSETS
+### ✅ Use Case 3g: FETCH COLLECTIONS, ITEMS, AND ASSETS
 
 ```java
 System.out.println("\n========== USE CASE 3: FETCH COLLECTIONS, ITEMS, AND ASSETS ==========");
