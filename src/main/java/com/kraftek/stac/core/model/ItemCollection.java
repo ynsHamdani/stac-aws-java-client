@@ -4,18 +4,28 @@ import java.util.List;
 
 public class ItemCollection {
     protected String stac_version;
-    protected ItemType type;
+    protected String type; // Changed from ItemType to String
+
+    //protected ItemType type;
     protected List<Item> features;
     protected List<Link> links;
     protected int numberReturned;
     protected int numberMatched;
     protected PageContext context;
 
-    public ItemType getType() {
+    /*public ItemType getType() {
         return type;
     }
 
     public void setType(ItemType type) {
+        this.type = type;
+    }
+*/
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
         this.type = type;
     }
 

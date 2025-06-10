@@ -63,7 +63,13 @@ public class ItemDeserializer extends StdDeserializer<Item> {
                     item.setStac_version(JsonValueHelper.getString(root, field));
                     break;
                 case "type":
-                    item.setType(ItemType.valueOf(JsonValueHelper.getString(root, field)));
+                    String typeValue = JsonValueHelper.getString(root, field);
+                    try {
+                        item.setType(ItemType.valueOf(typeValue)); // Standard type
+                    } catch (IllegalArgumentException e) {
+                        System.out.println("Unknown ItemType: " + typeValue + ". Setting type to null.");
+                        item.setType(null); // Gracefully handle unknown type
+                    }
                     break;
                 case "id":
                     item.setId(JsonValueHelper.getString(root, field));

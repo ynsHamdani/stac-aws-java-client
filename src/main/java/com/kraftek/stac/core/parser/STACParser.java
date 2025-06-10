@@ -32,6 +32,7 @@ public class STACParser {
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
 
+
     /**
      * Resolves the JSON content to a Catalog object
      * @param content   The JSON content
@@ -87,6 +88,7 @@ public class STACParser {
     public ItemCollection parseItemCollectionResponse(String content) throws JsonProcessingException {
         return mapper.readValue(content, ItemCollection.class);
     }
+
     /**
      * Resolves the JSON content to an ItemCollection object
      * @param stream   The input stream

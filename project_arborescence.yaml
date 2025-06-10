@@ -1,0 +1,117 @@
+
+src
+ -main
+   --java
+      ---com.kraftek.stac.core
+         ----model
+                -----extensions
+                        ------ eo
+                            ------- Band.java
+                            -------BandType.java
+                            -------EOExtension.java
+                            -------EoFields.java
+
+                        ------projection
+                            -------Centroid
+                            -------ProjExtension
+                            -------ProjFields
+
+
+                        ------view
+                            ------- ViewExtension
+                            ------- ViewFields
+
+                        ------Extension.java
+                        ------ExtensionFatcory.java
+                        ------ExtensionType.java
+                -----Asset.java
+                -----Catalog.java
+                -----Collection.java
+                -----CollectionList.java
+                -----Extensible.java
+                -----Extet.java
+                -----Feature.java
+                -----Geometry.java
+                -----GeometryType.java
+                -----HttpMethod.java
+                -----Item.java
+                -----ItemCollection.java
+                -----ItemType.java
+                -----Link.java
+                -----PageContext.java
+                -----Properties.java
+                -----Role.java
+                -----SpatialExtent.java
+                -----STACException.java
+                -----TemporalExtent.java
+
+         ----parser
+           -----ItemDeserializer
+           -----JsonValueHelper
+           -----SpatialDeserializer
+           -----STACParser
+           -----TemporalDeserializer
+
+         ----Authentication.java
+         ----AuthenticationType.java
+         ----HttpClient.java
+         ----STACClient.java
+      ---ro.cs.tao.utils
+
+
+
+Inputs : project_arbo, pom file, STACClient class code, STACClient class usage code
+  
+  
+  src
+  └── main
+  └── java
+  ├── com.kraftek.stac.core
+  │   ├── model
+  │   │   ├── extensions
+  │   │   │   ├── eo
+  │   │   │   │   ├── Band.java
+  │   │   │   │   ├── BandType.java
+  │   │   │   │   ├── EOExtension.java
+  │   │   │   │   ├── EoFields.java
+  │   │   │   ├── projection
+  │   │   │   │   ├── Centroid.java
+  │   │   │   │   ├── ProjExtension.java
+  │   │   │   │   ├── ProjFields.java
+  │   │   │   ├── view
+  │   │   │   │   ├── ViewExtension.java
+  │   │   │   │   ├── ViewFields.java
+  │   │   │   ├── Extension.java
+  │   │   │   ├── ExtensionFactory.java
+  │   │   │   ├── ExtensionType.java
+  │   │   ├── Asset.java
+  │   │   ├── Catalog.java
+  │   │   ├── Collection.java
+  │   │   ├── CollectionList.java
+  │   │   ├── Extensible.java
+  │   │   ├── Extent.java
+  │   │   ├── Feature.java
+  │   │   ├── Geometry.java
+  │   │   ├── GeometryType.java
+  │   │   ├── HttpMethod.java
+  │   │   ├── Item.java
+  │   │   ├── ItemCollection.java
+  │   │   ├── ItemType.java
+  │   │   ├── Link.java
+  │   │   ├── PageContext.java
+  │   │   ├── Properties.java
+  │   │   ├── Role.java
+  │   │   ├── SpatialExtent.java
+  │   │   ├── STACException.java
+  │   │   ├── TemporalExtent.java
+  │   ├── parser
+  │   │   ├── ItemDeserializer.java
+  │   │   ├── JsonValueHelper.java
+  │   │   ├── SpatialDeserializer.java
+  │   │   ├── STACParser.java
+  │   │   ├── TemporalDeserializer.java
+  │   ├── Authentication.java
+  │   ├── AuthenticationType.java
+  │   ├── HttpClient.java
+  │   ├── STACClient.java
+  ├── ro.cs.tao.utils
